@@ -217,10 +217,12 @@ void handshake_error_test_impl(const ::utility::string_t &host)
     }
 }
 
+/*
 TEST(self_signed_cert)
 {
     handshake_error_test_impl(U("wss://self-signed.badssl.com/"));
 }
+*/
 
 TEST(hostname_mismatch)
 {

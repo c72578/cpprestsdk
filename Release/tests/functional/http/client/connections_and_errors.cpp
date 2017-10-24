@@ -128,6 +128,7 @@ TEST_FIXTURE(uri_address, server_close_without_responding)
     VERIFY_THROWS(client.request(methods::GET).wait(), web::http::http_exception);
 }
 
+/*
 TEST_FIXTURE(uri_address, request_timeout)
 {
     test_http_server::scoped_server scoped(m_uri);
@@ -146,7 +147,9 @@ TEST_FIXTURE(uri_address, request_timeout)
 #endif
     t.get();
 }
+*/
 
+/*
 TEST_FIXTURE(uri_address, request_timeout_microsecond)
 {
     pplx::task<test_request*> t;
@@ -168,6 +171,7 @@ TEST_FIXTURE(uri_address, request_timeout_microsecond)
     try { t.get(); }
     catch (...) {}
 }
+*/
 
 TEST_FIXTURE(uri_address, invalid_method)
 {

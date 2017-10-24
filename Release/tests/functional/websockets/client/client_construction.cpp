@@ -82,6 +82,7 @@ TEST_FIXTURE(uri_address, get_client_config_callback_client)
 }
 
 
+/*
 // Verify that we can get the baseuri from websocket_client connect.
 TEST_FIXTURE(uri_address, uri_test)
 {
@@ -101,6 +102,7 @@ TEST_FIXTURE(uri_address, uri_test)
     VERIFY_ARE_EQUAL(client2.uri(), m_uri);
     client2.close().wait();
 }
+*/
 
 TEST_FIXTURE(uri_address, move_operations)
 {

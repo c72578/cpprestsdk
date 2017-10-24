@@ -174,6 +174,7 @@ TEST_FIXTURE(uri_address, large_body)
     listener.close().wait();
 }
 
+/*
 TEST_FIXTURE(uri_address, response_order)
 {
     http_listener listener(m_uri);
@@ -217,6 +218,7 @@ TEST_FIXTURE(uri_address, response_order)
 
     listener.close().wait();
 }
+*/
 
 TEST_FIXTURE(uri_address, uri_encoding, "Ignore", "Codeplex 201")
 {
