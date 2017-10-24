@@ -663,15 +663,19 @@ void auth_test_impl(bool fail)
     VERIFY_ARE_EQUAL(return_code, response.status_code());
 }
 
+/*
 TEST(auth_no_data)
 {
     auth_test_impl(false);
 }
+*/
 
+/*
 TEST(unsuccessful_auth_with_basic_cred)
 {
     auth_test_impl(true);
 }
+*/
 
 TEST_FIXTURE(uri_address, set_user_options_asio_http)
 {
@@ -693,6 +697,7 @@ TEST_FIXTURE(uri_address, set_user_options_asio_http)
     VERIFY_ARE_EQUAL(200, response.status_code());
 }
 
+/*
 TEST_FIXTURE(uri_address, set_user_options_asio_https)
 {
     handle_timeout([]
@@ -714,6 +719,7 @@ TEST_FIXTURE(uri_address, set_user_options_asio_https)
         VERIFY_IS_FALSE(v.empty());
     });
 }
+*/
 
 #endif
 

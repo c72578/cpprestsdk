@@ -355,6 +355,7 @@ TEST_FIXTURE(uri_address, download_nobody_exception)
     VERIFY_THROWS(client.request(msg).get().content_ready().get(), std::invalid_argument);
 }
 
+/*
 TEST_FIXTURE(uri_address, data_upload_exception)
 {
     http_client client(m_uri);
@@ -375,6 +376,7 @@ TEST_FIXTURE(uri_address, data_upload_exception)
     try { t.get(); }
     catch (const std::runtime_error&) { /* It is ok if the request does not complete before the server is shutdown */ }
 }
+*/
 
 TEST_FIXTURE(uri_address, data_download_exception, "Ignore:Windows", "395")
 {

@@ -73,6 +73,7 @@ TEST_FIXTURE(uri_address, request_to_string_with_body)
         body);
 }
 
+/*
 TEST_FIXTURE(uri_address, response_to_string_without_body)
 {
     test_http_server::scoped_server scoped(m_uri);
@@ -109,6 +110,7 @@ TEST_FIXTURE(uri_address, response_to_string_without_body)
     }
 #endif
 }
+*/
 
 TEST_FIXTURE(uri_address, response_to_string_with_body)
 {

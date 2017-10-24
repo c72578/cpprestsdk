@@ -87,6 +87,7 @@ bool is_timeout(const std::string &msg)
     return false;
 }
 
+/*
 TEST(ssl_test)
 {
     websocket_client client;
@@ -122,6 +123,7 @@ TEST(ssl_test)
         throw;
     }
 }
+*/
 
 // These tests are specific to our websocketpp based implementation.
 #if !defined(__cplusplus_winrt)
@@ -154,13 +156,16 @@ void sni_test_impl(websocket_client &client)
     }
 }
 
+/*
 // Test specifically for server SignalR team hit interesting cases with.
 TEST(sni_with_older_server_test)
 {
     websocket_client client;
     sni_test_impl(client);
 }
+*/
 
+/*
 // WinRT doesn't expose option for disabling.
 TEST(disable_sni)
 {
@@ -185,7 +190,9 @@ TEST(disable_sni)
         throw;
     }
 }
+*/
 
+/*
 // Winrt doesn't allow explicitly setting server host for SNI.
 TEST(sni_explicit_hostname)
 {
@@ -196,6 +203,7 @@ TEST(sni_explicit_hostname)
     websocket_client client(config);
     sni_test_impl(client);
 }
+*/
 
 void handshake_error_test_impl(const ::utility::string_t &host)
 {

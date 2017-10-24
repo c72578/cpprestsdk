@@ -34,6 +34,7 @@ TEST_FIXTURE(uri_address, string_types)
     http_client c3(utility::string_t(U("http://localhost:4567/")));
 }
 
+/*
 // Tests different variations on specifying the URI in http_client constructor.
 TEST_FIXTURE(uri_address, different_uris)
 {
@@ -60,6 +61,7 @@ TEST_FIXTURE(uri_address, different_uris)
         test_connection(scoped.server(), &client, expected_paths[i]);
     }
 }
+*/
 
 // Helper function verifies that when constructing an http_client with given
 // URI std::invalid_argument is thrown.

@@ -341,6 +341,7 @@ TEST_FIXTURE(uri_address, cancel_after_body)
     response.content_ready().wait();
 }
 
+/*
 TEST_FIXTURE(uri_address, cancel_with_error)
 {
     http_client c(m_uri);
@@ -356,6 +357,7 @@ TEST_FIXTURE(uri_address, cancel_with_error)
     // All errors after cancellation are ignored.
     VERIFY_THROWS_HTTP_ERROR_CODE(responseTask.get(), std::errc::operation_canceled);
 }
+*/
 
 TEST_FIXTURE(uri_address, cancel_while_uploading_data)
 {
@@ -415,6 +417,7 @@ TEST_FIXTURE(uri_address, cancel_while_downloading_data)
 }
 #endif
 
+/*
 // Try to connect to a server on a closed port and cancel the operation.
 TEST_FIXTURE(uri_address, cancel_bad_port)
 {
@@ -446,6 +449,7 @@ TEST_FIXTURE(uri_address, cancel_bad_port)
 
     VERIFY_THROWS_HTTP_ERROR_CODE(t.get(), std::errc::operation_canceled);
 }
+*/
 
 } // SUITE(connections_and_errors)
 
